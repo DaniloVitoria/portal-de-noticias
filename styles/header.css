@@ -6,8 +6,8 @@
   align-items: center;
   gap:1rem;
 
-  padding: 1.25rem 2rem;
-
+  
+padding: 1em;
   & > span {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,6 +21,7 @@
 
   & > div {
     display: grid;
+    grid-template-columns: 1fr ;
     gap: 0.5rem;
   }
  
@@ -30,8 +31,28 @@
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
-
-  padding: 0.875em 2em;
+left: 0;
+  
+  padding: 0.875em 1em;
 }
 
 
+@media (width >= 48.75em){
+.navbar_primary{
+  padding: 1.25rem 2rem;
+
+
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+
+.content {
+  padding: 0.875em 2em;
+  
+}
+
+}
