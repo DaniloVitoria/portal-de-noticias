@@ -1,0 +1,37 @@
+.navbar_primary{
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+
+  padding: 1.25rem 2rem;
+
+  & > span {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  & > h1 {
+    white-space: nowrap;
+    color: var(--brand-color-light)
+  }
+
+  & > div {
+    display: grid;
+    gap: 0.5rem;
+  }
+ 
+}
+
+.content {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+
+  padding: 0.875em 2em;
+}
+
+

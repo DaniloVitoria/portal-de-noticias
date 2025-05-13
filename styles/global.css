@@ -1,0 +1,89 @@
+:root {
+  
+
+  /*Produto*/
+
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
+
+  /* Base*/
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+
+  /*cor do textos */
+  --text-color-primary: #F1F5F9;
+  --text-color-secondary: #CBD5E1;
+
+  /*tipografia dos textos*/
+  --ff-archivo: "Archivo", sans-serif;
+
+
+
+  /*tamanho dos textos*/
+  --fs-base: 1rem;
+  --fs-h1: 1.5rem;/*peso extrabold*/
+  --fs-h2: 1rem;/*peso extrabold*/
+  --fs-h3: 0.875rem;/*peso extrabold*/
+  --fs-span: 0.875rem; /*peso semibold*/
+  --fs-p: 0.875rem; /*possui peso de regular*/
+
+  /*Peso das fontes*/
+  --fw-extrabold: 800;
+  --fw-semibold: 600;
+  --fw-regular: 400;
+
+}
+
+html {
+  font-family: var(--ff-archivo);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+  font-weight: var(--fw-extrabold);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h2, h3 {
+  line-height: 1.4;
+}
+
+
+span {
+  font-size: var(--fs-span);
+  font-weight: var(--fw-semibold);
+  line-height: 1.45;
+}
+
+p {
+  font-size: var(--fs-p);
+  line-height: 1.6;
+  font-weight: var(--fw-regular);
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 48.75em){
+  .desktop-only{
+    display: block;
+  }
+}
