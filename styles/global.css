@@ -78,6 +78,11 @@ p {
   font-weight: var(--fw-regular);
 }
 
+a{
+  text-decoration: none;
+  
+}
+
 .desktop-only {
   display: none;
 }
