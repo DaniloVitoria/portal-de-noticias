@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.gap1{
+  gap: 1em;
+}
+
 .dont-break-word{
   white-space: nowrap;
 }
