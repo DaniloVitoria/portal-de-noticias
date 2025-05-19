@@ -65,6 +65,7 @@
 
   & > .container__contentcard {
     bottom: 0;
+    margin: 4.5em 1.5em 1.5em 1.5em;
   }
 
 }
@@ -75,11 +76,14 @@
   color: var(--text-color-primary);
   max-height: 50%;
 
+  color: var(--text-color-primary);
+
   & > h3 {
     display: inline-block;
     font-size: 0.625em;
     background-color: var(--brand-color-dark);
     border-radius: 0.25em;
+    padding: 0.5em;
   }
 
   & > span {
