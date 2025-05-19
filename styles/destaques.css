@@ -1,6 +1,6 @@
 #destaques {
-  display: flex;
-  width: 100vw; /* 100% da largura da tela */
+  
+  width: 100%; /* 100% da largura da tela */
   max-width: 100%; /* garante que não ultrapasse */
   overflow-x: hidden; /* evita que passe da tela horizontalmente */
   margin: 0 auto; /* centraliza se houver algum espaço sobrando */
@@ -29,7 +29,7 @@
   grid-template-columns: 1fr ;
   width: auto;
   margin: 0 auto 1rem auto;
-  
+  object-fit: cover;
 }
   
   & > .noticias{
@@ -49,11 +49,41 @@
 }
 
 
+.noticia1{
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  & > .container__contentcard{
+    
+  }
+
+}
+
+.noticia1 > div{
+  position: absolute;
+  bottom: 0;
+  color: var(--text-color-primary);
+  max-height: 50%;
+
+  & > h3 {
+    display: inline-block;
+    font-size: 0.625em;
+    background-color: var(--brand-color-dark);
+    border-radius: 0.25em;
+  }
+
+  & > span {
+    display: block;
+    font-size: var(--fs-h1);
+  }
+}
+
+
 @media (width >= 48.75em){
 
 
   #destaques {
-  display: flex;
+  
   width: 100vw; /* 100% da largura da tela */
   max-width: 100%; /* garante que não ultrapasse */
   overflow-x: hidden; /* evita que passe da tela horizontalmente */
@@ -72,6 +102,7 @@
   }
 
 & > .noticia1{
+  height: 100%;
   width: 50%;
 }
   
@@ -89,4 +120,21 @@
   }
 }
 
+
+
+.noticia1{
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  & > .container__contentcard{
+    
+  }
+
+}
+
+.noticia1 > div{
+  position: absolute;
+  bottom: 0;
+  
+}
 }
