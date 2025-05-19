@@ -53,15 +53,25 @@
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
-  & > .container__contentcard{
-    
+  
+  & > .container__contentcard span{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;          /* número de linhas visíveis */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  }
+
+  & > .container__contentcard {
+    bottom: 0;
   }
 
 }
 
 .noticia1 > div{
   position: absolute;
-  bottom: 0;
+  
   color: var(--text-color-primary);
   max-height: 50%;
 
@@ -134,7 +144,7 @@
 
 .noticia1 > div{
   position: absolute;
-  bottom: 0;
+  
   
 }
 }
