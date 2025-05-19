@@ -48,6 +48,73 @@
   }
 }
 
+/*parte da noticia 1 para celular*/
+.noticia1{
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  & > .container__contentcard span{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;          /* número de linhas visíveis */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  }
+
+  & > .container__contentcard {
+    bottom: 0;
+    margin: 3.2em 1em 1em 1em;
+  }
+
+}
+
+.noticia1 > div{
+  position: absolute;
+  
+  color: var(--text-color-primary);
+  max-height: 50%;
+
+  color: var(--text-color-primary);
+
+  & > h3 {
+    display: inline-block;
+    font-size: 0.625em;
+    background-color: var(--brand-color-dark);
+    border-radius: 0.25em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  & > span {
+    display: block;
+    font-size: var(--fs-h1);
+  }
+}
+
+/*fim da parte da noticia 1 para celular*/
+
+
+@media (width >= 48.75em){
+
+
+  #destaques {
+  
+  width: 100vw; /* 100% da largura da tela */
+  max-width: 100%; /* garante que não ultrapasse */
+  overflow-x: hidden; /* evita que passe da tela horizontalmente */
+  margin: 0 auto; /* centraliza se houver algum espaço sobrando */
+
+
+
+
+
+
+
+
+  
+}
 
 .noticia1{
   position: relative;
@@ -84,6 +151,7 @@
     background-color: var(--brand-color-dark);
     border-radius: 0.25em;
     padding: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   & > span {
@@ -93,16 +161,6 @@
 }
 
 
-@media (width >= 48.75em){
-
-
-  #destaques {
-  
-  width: 100vw; /* 100% da largura da tela */
-  max-width: 100%; /* garante que não ultrapasse */
-  overflow-x: hidden; /* evita que passe da tela horizontalmente */
-  margin: 0 auto; /* centraliza se houver algum espaço sobrando */
-}
 
   .container__destaques{
  display: flex;
