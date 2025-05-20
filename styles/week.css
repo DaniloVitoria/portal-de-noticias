@@ -1,0 +1,26 @@
+#week {
+
+
+
+    padding-top: 0.75em;
+
+
+    & > .heading {
+        justify-content: space-between;
+        
+    }
+
+    
+
+    &  .containerimg {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+
+        & > img {
+
+            background-color: brown;
+            
+        }
+    }
+}

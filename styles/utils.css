@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.flex {
+  display: flex;
+}
+
 .gap1{
   gap: 1em;
 }
