@@ -56,9 +56,9 @@
   
   & > .container__contentcard span{
     display: -webkit-box;
-  -webkit-line-clamp: 3;          /* número de linhas visíveis */
+          /* número de linhas visíveis */
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  
   text-overflow: ellipsis;
   
   }
@@ -67,6 +67,15 @@
     bottom: 0;
     margin: 3.2em 1em 1em 1em;
     padding-bottom: 2rem;
+
+    
+
+
+    & > .alinhamento {
+      background-color: black;
+      grid-template-columns: auto;
+      
+    }
   }
 
 }
@@ -104,7 +113,49 @@
 /*fim da parte da noticia 1 para celular*/
 
 
+
+/*Noticias*/
+
+.container_noticias {
+
+position: relative;
+
+  & > .container__contentcard{
+
+    position: absolute;
+    bottom: 0;
+  }
+}
+.container__contentcard{
+  margin:2.25em 0.75em 0.75em 0.75em ;
+  
+  
+  text-overflow: ellipsis;
+}
+
+.container__contentcard span{
+
+  /*Importante: limita o numero total de linhas para 3 e esconde o que exceder dentro do span mostrando 3 pontos...*/
+  display: -webkit-box;
+  -webkit-line-clamp: 3;          /* número de linhas visíveis */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.container_noticias {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 @media (width >= 48.75em){
+
+.container__contentcard{
+  margin: 0.1em ;
+}
 
 
   #destaques {

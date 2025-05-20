@@ -9,3 +9,7 @@
 .dont-break-word{
   white-space: nowrap;
 }
+
+.block {
+  display: block;
+}
