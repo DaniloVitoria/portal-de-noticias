@@ -45,14 +45,14 @@
             object-fit: cover;
 
             & > div{
-                display: flex;
+                display: grid;
                 justify-content: center;
             }
 
             &  img{
 
                 
-                
+               width: 100%; 
                 max-width: 100%;
             }
             
@@ -76,7 +76,28 @@
     }
 
 
+
+     & span{
+        text-align:justify;
+        
+        width: auto;
+        display: -webkit-box;
+  -webkit-line-clamp: 3;          /* número de linhas visíveis */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;;
+    }
+
+
+
+    & .imagecard > img{
+        
+        object-fit: cover;
+    }
 }
+
+
+
 
 
 
