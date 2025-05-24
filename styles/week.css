@@ -23,6 +23,89 @@
             
         }
     }
+
+
+
+    & .cardsweek{
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    & .cardsweek__content{
+        grid-template-columns: 1fr ;
+        gap: 1em;
+
+
+
+        &  .cardsweek__cards{
+            display: grid;
+            justify-content: center;
+            object-fit: cover;
+
+            & > div{
+                display: flex;
+                justify-content: center;
+            }
+
+            &  img{
+
+                
+                
+                max-width: 100%;
+            }
+            
+        }
+
+
+
+        
+    }
+
+
+    & .carweek__text {
+        text-align:justify;
+        
+        width: auto;
+        display: -webkit-box;
+  -webkit-line-clamp: 3;          /* número de linhas visíveis */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;;
+    }
+
+
+}
+
+
+
+
+@media (width >= 48.75em){
+#week {
+
+
+
+    & .cardsweek__content{
+        grid-template-columns: 1fr 1fr  1fr 1fr;
+        gap: 1em;
+
+
+
+        &  .cardsweek__cards{
+            
+
+            &  img{
+
+                
+                
+                max-width: 100%;
+            }
+            
+        }
+    }
+}
+
 }
 
 
