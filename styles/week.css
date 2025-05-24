@@ -27,7 +27,7 @@
 
 
     & .cardsweek{
-        margin-top: 1em;
+        margin: 1.5em 0;
         display: flex;
         justify-content: center;
     }
@@ -35,18 +35,19 @@
 
     & .cardsweek__content{
         grid-template-columns: 1fr ;
-        gap: 1em;
+        gap: 2em;
 
 
 
         &  .cardsweek__cards{
-            display: grid;
+            
             justify-content: center;
             object-fit: cover;
 
             & > div{
-                display: grid;
+                
                 justify-content: center;
+                object-fit: contain;
             }
 
             &  img{
@@ -64,28 +65,19 @@
     }
 
 
-    & .carweek__text {
-        text-align:justify;
-        
-        width: auto;
-        display: -webkit-box;
-  -webkit-line-clamp: 3;          /* número de linhas visíveis */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;;
-    }
+   
 
 
 
      & span{
-        text-align:justify;
+        
         
         width: auto;
         display: -webkit-box;
   -webkit-line-clamp: 3;          /* número de linhas visíveis */
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;;
+  text-overflow: ellipsis;
     }
 
 
@@ -106,6 +98,7 @@
 #week {
 
 
+    
 
     & .cardsweek__content{
         grid-template-columns: 1fr 1fr  1fr 1fr;
@@ -125,6 +118,11 @@
             
         }
     }
+
+
+
+
+   
 }
 
 }
