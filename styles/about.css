@@ -1,0 +1,26 @@
+#about {
+    margin: 5em 1em 0 1em;
+    
+
+
+
+
+
+    & .about_container__content{
+    width: 100%;
+    max-width: 100%;
+    gap: 2em
+    }
+
+    & .destaques__IA, .aside {
+    width: 50%;
+    max-width: 50%;
+    }
+
+
+
+
+
+
+
+}

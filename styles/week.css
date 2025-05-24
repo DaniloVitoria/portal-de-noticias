@@ -67,18 +67,20 @@
 
    
 
-
-
-     & span{
-        
-        
-        width: auto;
-        display: -webkit-box;
-  -webkit-line-clamp: 3;          /* número de linhas visíveis */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+& .textcards__week{
+    & span{
+       
+       
+       width: auto;
+       display: -webkit-box;
+       -webkit-line-clamp: 3;          /* número de linhas visíveis */
+       -webkit-box-orient: vertical;
+       overflow: hidden;
+       text-overflow: ellipsis;
     }
+
+}
+
 
 
 
