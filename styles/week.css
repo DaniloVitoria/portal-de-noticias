@@ -7,7 +7,7 @@
 
     & > .heading {
         justify-content: space-between;
-        
+        color: var(--text-color-secondary);
     }
 
     
@@ -15,7 +15,7 @@
     &  .containerimg {
         grid-template-columns: 1fr 0.4fr;
         align-items: center;
-        
+        color: var(--text-color-secondary);
 
         & > img {
             margin-left: 0.25em;

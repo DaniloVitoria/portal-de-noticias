@@ -51,6 +51,8 @@
 }
 
 html {
+  height: 100%;
+  height: 100%;
   font-family: var(--ff-archivo);
   font-weight: var(--fw-regular);
   font-size: var(--fs-base);
@@ -65,7 +67,8 @@ html {
 }
 
 body {
-
+height: 100%;
+height: 100%;
 }
 
 h1, h2, h3 {
