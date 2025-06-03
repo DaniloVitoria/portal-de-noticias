@@ -177,9 +177,28 @@ width: 100%;
             object-fit: cover;
         }
     }
+
+
+      & > .heading {
+        justify-content: space-between;
+        color: var(--text-color-secondary);
+    }
+ &  .containerimg {
+        grid-template-columns: 1fr 0.4fr;
+        align-items: center;
+        color: var(--text-color-secondary);
+
+        & > img {
+            margin-left: 0.25em;
+            
+            
+        }
+     }
+
+
 }
 
-@media (width <= 527px) {
+@media (width <= 689px) {
 
 
 
@@ -195,7 +214,51 @@ width: 100%;
                 }
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+    }
     }
     
 
+
+
+
+@media (width<= 581px){
+
+    #about{
+  & .aside{
+
+           
+                   & .heading{
+                    justify-content: space-between;
+                    gap: 1em
+                }
+            }
+
+
+            
+    }
 }
+
+
+
+
+
+
+  
