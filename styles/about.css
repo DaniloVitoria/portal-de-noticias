@@ -87,7 +87,14 @@
     }
 }
 
+.containerallnotices{
+    grid-template-columns: 1fr 1fr;
+}
 
+.containercontentsaboutsection{
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
 
 .containerright{
 
@@ -107,11 +114,76 @@
     
 }
 
+.containerrightpeople{
+       width: 438px;
+    height: 200px;
+    
+    
+    
+    
+        
+        background-image: url(../assets/pessoascomcelular.png);
+    
+    background-size: cover;      /* Faz a imagem preencher toda a div */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem na div */
+    
+}
+
+
+.containerrightnotebook{
+           width: 438px;
+    height: 200px;
+    
+    
+    
+    
+        
+        background-image: url(../assets/maorobo.png);
+    
+    background-size: cover;      /* Faz a imagem preencher toda a div */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem na div */
+   
+}
+
+
+.containerrightmeninacelular{
+              width: 438px;
+    height: 200px;
+    
+    
+    
+    
+        
+        background-image: url(../assets/meninacelular.png);
+    
+    background-size: cover;      /* Faz a imagem preencher toda a div */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem na div */
+  
+}
+
+
+
+.aside{
 
 
 
 
 
+
+    & .containerads{
+        width: inherit;
+        height: inherit;
+        & > img {
+            background-image: url(../assets/Ads.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
 
 @media (width <= 527px) {
 
